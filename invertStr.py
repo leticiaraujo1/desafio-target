@@ -2,11 +2,12 @@
 
 my_str = input('digite a string a ser invertida:')
 
-def inverter(str):
-    new_str = []
-    for i in str:
-        new_str.insert(0,i)
+def invert(str):
+    new_str = ''
+
+    for i in range(len(str)-1,-1,-1):
+        new_str += str[i]
     
-    return ''.join(new_str)
+    return new_str
     
-print(inverter(my_str))
+print(invert(my_str))
